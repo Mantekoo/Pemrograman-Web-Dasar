@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+
+    <!-- BAGIAN CSS (GAYA DAN TAMPILAN) -->
+    <!-- Siswa hanya perlu mengubah bagian di bawah ini untuk mengganti warna/tampilan -->
+    <style>
+      /* 1. Mengatur tampilan dasar halaman */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Jenis Huruf */
+        background-color: #f4f4f4; /* Warna latar belakang halaman (abu-abu muda) */
+        margin: 0;
+        padding: 0;
+        color: #333; /* Warna teks dasar (hitam pudar) */
+      }
+
+      /* 2. Mengatur Kotak Utama (Agar web tidak terlalu lebar di layar besar) */
+      .container {
+        max-width: 800px; /* Lebar maksimal */
+        margin: 30px auto; /* Posisi otomatis di tengah */
+        background-color: white; /* Warna kertas portofolio */
+        padding: 40px; /* Jarak isi ke pinggir kertas */
+        border-radius: 15px; /* Membuat sudut kertas melengkung */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+        text-align: center; /* Semua teks rata tengah */
+      }
+
+      /* 3. Mengatur Foto Profil */
+      .foto-profil {
+        width: 180px; /* Lebar foto */
+        height: 180px; /* Tinggi foto */
+        object-fit: cover; /* Agar foto tidak gepeng */
+        border-radius: 50%; /* RAHASIA membuat foto jadi BULAT */
+        border: 5px solid #2c3e50; /* Garis tepi foto */
+        margin-bottom: 20px;
+      }
+
+      /* 4. Mengatur Judul Nama */
+      h1 {
+        color: #2c3e50; /* Warna Nama */
+        font-size: 2.5em; /* Ukuran tulisan */
+        margin-bottom: 10px;
+      }
+
+      /* 5. Mengatur Jabatan/Status */
+      .status {
+        color: #e74c3c; /* Warna tulisan status (merah bata) */
+        font-weight: bold;
+        letter-spacing: 2px; /* Jarak antar huruf */
+        text-transform: uppercase; /* Huruf besar semua */
+      }
+
+      /* 6. Mengatur Kotak-kotak Bagian (About, Skill, Contact) */
+      .wrap {
+        background-color: #ecf0f1; /* Warna kotak abu-abu */
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        text-align: left; /* Teks di dalam kotak rata kiri */
+      }
+
+      p {
+        text-align: justify; /*membuat text rata kiri dan kanan*/
+      }
+
+      /* Judul per bagian */
+      .wrap h2 {
+        color: #2980b9; /* Warna judul bagian (biru) */
+        border-bottom: 2px solid #bdc3c7; /* Garis bawah judul */
+        padding-bottom: 10px;
+      }
+
+      /* 7. Mengatur List Keahlian, Hobi, & Kontak */
+      ul {
+        list-style-type: none; /* Menghilangkan titik bullet */
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      /* Tampilan per item hobi,skill, & Kontak (seperti tombol) */
+      li {
+        display: inline-block; /* Agar berjejer ke samping */
+        background-color: #3498db; /* Warna latar tombol */
+        color: white; /* Warna tulisan */
+        padding: 8px 15px;
+        margin: 5px;
+        border-radius: 20px; /* Membuat tombol lonjong */
+        font-size: 0.9em;
+        text-decoration: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f4f4f4;
+      }
+
+      /* 8. Tombol Kontak */
+      .tombol-kontak {
+        display: inline-block;
+        margin-top: 30px;
+        background-color: #27ae60; /* Warna hijau */
+        color: white;
+        text-decoration: none; /* menghilangkan garis bawah link */
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s; /* animasi saat disentuh mouse */
+      }
+
+      .tombol-kontak:hover {
+        background-color: #219150; /* Warna berubah saat kursor mouse berada di atas tpmbol */
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- BAGIAN HTML (KERANGKA DAN ISI) -->
+
+    <div class="container">
+      <!-- GANTI FOTO: Ubah link gambar di bawah. Bisa pakai file sendiri atau link internet -->
+      <img
+        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        alt="Foto Profil"
+        class="foto-profil"
+      />
+
+      <!-- GANTI NAMA -->
+      <h1>Paul Dessandi</h1>
+
+      <!-- GANTI STATUS -->
+      <p class="status">Mahasiswa & Teknisi</p>
+
+      <!-- BAGIAN TENTANG SAYA -->
+      <div class="wrap">
+        <h2>Tentang Saya</h2>
+        <p>
+          Bagi saya, dunia IT bukan sekadar teori di ruang kelas. Sebagai
+          mahasiswa Teknik Elektro, saya memadukan ilmu akademis dengan aksi
+          nyata. <br /><br />
+          Hari-hari saya diisi dengan menyeimbangkan tiga dunia: mendalami teori
+          di kampus, memecahkan masalah perangkat keras sebagai Teknisi IT, dan
+          mentransfer ilmu kepada orang lain sebagai Instruktur. Keaktifan saya
+          di organisasi juga mengajarkan saya arti kepemimpinan dan kolaborasi.
+          Saya adalah pembelajar seumur hidup yang antusias mengubah masalah
+          teknis menjadi solusi praktis."
+        </p>
+      </div>
+
+      <!-- BAGIAN KEAHLIAN -->
+      <div class="wrap">
+        <h2>Keahlian</h2>
+        <ul>
+          <!-- Tambahkan <li> baru untuk menambah list -->
+          <li>Networking</li>
+          <li>Programming</li>
+          <li>Broadcasting</li>
+          <li>Editing</li>
+          <li>Coaching</li>
+        </ul>
+      </div>
+
+      <!-- BAGIAN HOBI -->
+      <div class="wrap">
+        <h2>Hobi</h2>
+        <ul>
+          <!-- Tambahkan <li> baru untuk menambah list -->
+          <li>Bermain Musik</li>
+          <li>Olahraga</li>
+          <li>Riding</li>
+        </ul>
+      </div>
+
+      <!-- BAGIAN KONTAK -->
+      <div class="wrap">
+        <h2>Hubungi Saya</h2>
+        <ul>
+          <!-- Tambahkan <li> baru untuk menambah list -->
+          <li>
+            <a href="https://www.instagram.com/dessandi__?igsh=ZDVqOGN0ZW9mbHNh"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@paul_dessandy?is_from_webapp=1&sender_device=pc"
+              >Tiktok</a
+            >
+          </li>
+          <li><a href="https://wa.me/6281353440299">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <br /><br />
+      <small>&copy; 2025 Dibuat dengan semangat belajar.</small>
+    </div>
+  </body>
+</html>
